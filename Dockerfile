@@ -1,4 +1,4 @@
-# FROM quay.io/keycloak/keycloak:20.0.3
+FROM quay.io/keycloak/keycloak:20.0.3
 
 # Make the realm configuration available for import
 # COPY realm-export.json /opt/keycloak_import/
