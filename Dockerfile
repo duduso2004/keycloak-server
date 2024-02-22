@@ -40,4 +40,4 @@ EXPOSE 8080
 EXPOSE 8081
 EXPOSE 8443
 
-RUN /opt/keycloak/bin/kc.sh start --optimized
+CMD ["start-dev"]
