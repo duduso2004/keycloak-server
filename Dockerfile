@@ -15,4 +15,4 @@ EXPOSE 8081
 EXPOSE 8443
 
 # Import the realm on start-up
-CMD ["start-dev"]
+ENTRYPOINT ["/opt/keycloak/bin/kc.sh"]
