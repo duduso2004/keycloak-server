@@ -1,4 +1,4 @@
-FROM quay.io/keycloak/keycloak:latest as builde
+FROM quay.io/keycloak/keycloak:latest as builder
 
 # Enable health and metrics support
 ENV KC_HEALTH_ENABLED=true
@@ -25,5 +25,8 @@ ENV KC_PROXY=edge
 ENV KC_FEATURES=token-exchange,admin-fine-grained-authz
 ENV PROXY_ADDRESS_FORWARDING=true
 ENV KC_HOSTNAME_STRICT_BACKCHANNEL=true
+
+EXPOSE 8081
+EXPOSE 8443
 
 ENTRYPOINT ["/opt/keycloak/bin/kc.sh"]
