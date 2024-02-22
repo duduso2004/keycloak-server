@@ -19,10 +19,11 @@ FROM quay.io/keycloak/keycloak:latest
 ENV KC_HEALTH_ENABLED=true
 ENV KC_METRICS_ENABLED=true
 ENV KC_DB=postgres
+ENV KC_DB_URL=jdbc:postgresql://aws-0-us-west-1.pooler.supabase.com:5432/keycloak_db
 ENV KC_DB_USERNAME=postgres.omeutqjmklyymcyshtmv
 ENV KC_DB_PASSWORD=a1de6eb9-a3ed-4394-bb11-e295a53e10c2
-ENV KC_DB_URL_HOST=aws-0-us-west-1.pooler.supabase.com
-ENV KC_DB_URL_PORT=5432
+#ENV KC_DB_URL_HOST=aws-0-us-west-1.pooler.supabase.com
+#ENV KC_DB_URL_PORT=5432
 ENV KC_DB_SCHEMA=public
 ENV KEYCLOAK_ADMIN=admin
 ENV KEYCLOAK_ADMIN_PASSWORD=admin
