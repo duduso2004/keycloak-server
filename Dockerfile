@@ -16,7 +16,7 @@ FROM quay.io/keycloak/keycloak:latest
 COPY --from=builder /opt/keycloak/ /opt/keycloak/
 
 # change these values to point to a running postgres instance
-ENV KC_HOSTNAME=keycloak-duduso.zeabur.app/
+ENV KC_HOSTNAME=keycloak-duduso.zeabur.app
 ENV KC_HTTPS_PROTOCOLS=TLSv1.3,TLSv1.2
 ENV KC_HTTP_PORT=8080
 ENV KC_HOSTNAME_STRICT_HTTPS=false
