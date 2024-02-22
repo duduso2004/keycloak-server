@@ -29,4 +29,4 @@ ENV KC_HOSTNAME_STRICT_BACKCHANNEL=true
 EXPOSE 8081
 EXPOSE 8443
 
-ENTRYPOINT ["/opt/keycloak/bin/kc.sh"]
+CMD ["start-dev"]
