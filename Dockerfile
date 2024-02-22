@@ -40,4 +40,4 @@ EXPOSE 8080
 EXPOSE 8081
 EXPOSE 8443
 
-CMD ["start-dev"]
+CMD ["start --optimized"]
