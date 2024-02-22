@@ -2,7 +2,7 @@
 
 # Enable health and metrics support
 #ENV KC_HEALTH_ENABLED=true
-#ENV KC_METRICS_ENABLED=true
+#ENV KC_METRICS_ENABLED=false
 #ENV KC_FEATURES=token-exchange,admin-fine-grained-authz
 
 #WORKDIR /opt/keycloak
