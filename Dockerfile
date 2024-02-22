@@ -1,7 +1,7 @@
 #FROM quay.io/keycloak/keycloak:latest as builder
 
 # Enable health and metrics support
-#ENV KC_HEALTH_ENABLED=true
+#ENV KC_HEALTH_ENABLED=false
 #ENV KC_METRICS_ENABLED=false
 #ENV KC_FEATURES=token-exchange,admin-fine-grained-authz
 
@@ -16,8 +16,8 @@ FROM quay.io/keycloak/keycloak:latest
 #COPY --from=builder /opt/keycloak/ /opt/keycloak/
 
 # change these values to point to a running postgres instance
-ENV KC_HEALTH_ENABLED=true
-ENV KC_METRICS_ENABLED=true
+ENV KC_HEALTH_ENABLED=false
+ENV KC_METRICS_ENABLED=false
 ENV KC_DB=postgres
 ENV KC_DB_URL=jdbc:postgresql://aws-0-us-west-1.pooler.supabase.com:5432/keycloak_db
 ENV KC_DB_USERNAME=postgres.omeutqjmklyymcyshtmv
